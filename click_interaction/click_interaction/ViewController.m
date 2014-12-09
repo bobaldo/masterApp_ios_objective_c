@@ -15,7 +15,7 @@
 
 @implementation ViewController
 - (IBAction)click:(id)sender {
-    self.label.text = @"PD";
+    self.label.text = @"Cliccato";
 }
 
 - (void)viewDidLoad {
