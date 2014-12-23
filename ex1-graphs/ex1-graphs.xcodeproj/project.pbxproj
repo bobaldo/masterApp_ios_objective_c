@@ -14,7 +14,7 @@
 		6178F9611A3C64190023A09D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6178F9601A3C64190023A09D /* Images.xcassets */; };
 		6178F9641A3C64190023A09D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6178F9621A3C64190023A09D /* LaunchScreen.xib */; };
 		6178F9701A3C64190023A09D /* ex1_graphsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6178F96F1A3C64190023A09D /* ex1_graphsTests.m */; };
-		6178F97A1A3C65CE0023A09D /* CsvExample.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6178F9791A3C65CE0023A09D /* CsvExample.csv */; };
+		B51506D31A46C143008AC67F /* CsvExample.csv in Resources */ = {isa = PBXBuildFile; fileRef = B51506D21A46C143008AC67F /* CsvExample.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 		6178F9691A3C64190023A09D /* ex1-graphsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ex1-graphsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6178F96E1A3C64190023A09D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6178F96F1A3C64190023A09D /* ex1_graphsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex1_graphsTests.m; sourceTree = "<group>"; };
-		6178F9791A3C65CE0023A09D /* CsvExample.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CsvExample.csv; path = ../../../CsvExample.csv; sourceTree = "<group>"; };
+		B51506D21A46C143008AC67F /* CsvExample.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CsvExample.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 		6178F9531A3C64190023A09D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6178F9791A3C65CE0023A09D /* CsvExample.csv */,
+				B51506D21A46C143008AC67F /* CsvExample.csv */,
 				6178F9541A3C64190023A09D /* Info.plist */,
 				6178F9551A3C64190023A09D /* main.m */,
 			);
@@ -202,7 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6178F97A1A3C65CE0023A09D /* CsvExample.csv in Resources */,
+				B51506D31A46C143008AC67F /* CsvExample.csv in Resources */,
 				6178F95F1A3C64190023A09D /* Main.storyboard in Resources */,
 				6178F9641A3C64190023A09D /* LaunchScreen.xib in Resources */,
 				6178F9611A3C64190023A09D /* Images.xcassets in Resources */,
@@ -416,6 +416,7 @@
 				6178F9751A3C64190023A09D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6178F9761A3C64190023A09D /* Build configuration list for PBXNativeTarget "ex1-graphsTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +425,7 @@
 				6178F9781A3C64190023A09D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

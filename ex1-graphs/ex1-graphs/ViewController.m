@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     NSLog (@"Inizio");
     
-    NSString *pathToFile= @"/private/var/root/Desktop/CsvExample.csv";
+    NSString *pathToFile= @"/Users/davidepatrizi/Documents/project/masterApp_ios_objective_c/ex1-graphs/CsvExample.csv";
     NSError *outError=nil;
     
     NSString *fileString = [NSString stringWithContentsOfFile:pathToFile encoding:NSUTF8StringEncoding error:&outError];
