@@ -31,37 +31,48 @@
         
         int viewW = _txtView.frame.size.width;
         int viewH = _txtView.frame.size.height;
-        int delta=20;
+        int delta=30;
         int x= 0;
         int y=0;
-        int width=10;
+        int width=15;
         int height=0;
         int indexRow=0;
         // NSMutableString* valueCols = [NSMutableString init];
         NSString *row = nil;
         NSString *cols = nil;
         NSMutableArray *itemToAdd = [NSMutableArray array];
+        UIFont *labelFont = [UIFont fontWithName:@"Verdana" size:14];
         
         while([scanner scanUpToString:@";" intoString:&row] && [scanner scanUpToString:@"\n" intoString:&cols])
         {
             NSLog(@" %@ %@", row, cols);
 
-            int a = (viewH / [cols intValue]);
-            height = (viewH / [cols intValue]) * [cols intValue];
+            //int a = (viewH / [cols intValue]);
+            //height = (viewH / [cols intValue]) * [cols intValue];
+            height = [cols intValue];
             indexRow = indexRow+1;
             y = viewH - height;
             UIView *view = [[UIView alloc] initWithFrame:CGRectMake(x, y, width, height)];
             view.backgroundColor = [UIColor redColor];
-            //[_txtView addSubview:view];
-            [itemToAdd addObject:view];
+            [_txtView addSubview:view];
+            //[itemToAdd addObject:view];
+            UILabel *lblValue = [[UILabel alloc] initWithFrame:CGRectMake(x, y - 20 , 30, 15)];
+            lblValue.font = labelFont;
+            lblValue.text = cols;
+            [_txtView addSubview:lblValue];
+            
+            UILabel *lblLegend = [[UILabel alloc] initWithFrame:CGRectMake(x, viewH + 10, 30, 15)];
+            lblValue.font = labelFont;
+            lblLegend.text = row;
+            [_txtView addSubview:lblLegend];
             
             x = x + delta;
         }
         
         
-        for (int i=0; i<[itemToAdd count]; i++){
-            [_txtView addSubview:itemToAdd[i]];
-        }
+//        for (int i=0; i<[itemToAdd count]; i++){
+//            [_txtView addSubview:itemToAdd[i]];
+//        }
         
         _txtNumeroRighe.text = [NSString stringWithFormat: @"%d",  indexRow];
     }
