@@ -39,7 +39,7 @@
     int width=10;
     int height=0;
     int indexRow=0;
-    NSMutableString* valueCols = [NSMutableString init];
+    //NSMutableString* valueCols = [NSMutableString init];
     NSString *row=nil;
     NSString *cols=nil;
     while([scanner scanUpToString:@";" intoString:&row] && [scanner scanUpToString:@"\n" intoString:&cols])
